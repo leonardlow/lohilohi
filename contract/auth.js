@@ -1,7 +1,7 @@
 (function () {
   const AUTH_KEY = 'lohilohi_contract_auth';
   // Replace this hash with the output of the browser console snippet
-  const CORRECT_HASH = 'PLACEHOLDER';
+  const CORRECT_HASH = '1568690823383c442880facc51eee52d86ac34524de740cab96dd3334642c18d';
 
   async function sha256(str) {
     const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
