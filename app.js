@@ -267,6 +267,22 @@
     URL.revokeObjectURL(url);
   }
 
+  // ── Lightbox ──
+  function initLightbox() {
+    document.querySelectorAll('.image-strip img').forEach(img => {
+      img.addEventListener('click', () => {
+        const lb = document.createElement('div');
+        lb.id = 'lightbox';
+        const full = document.createElement('img');
+        full.src = img.src;
+        full.alt = img.alt;
+        lb.appendChild(full);
+        lb.addEventListener('click', () => lb.remove());
+        document.body.appendChild(lb);
+      });
+    });
+  }
+
   // ── Init ──
   document.addEventListener('DOMContentLoaded', () => {
     initTabs();
@@ -274,6 +290,7 @@
     updateStatus();
     const btn = document.getElementById('export-btn');
     if (btn) btn.addEventListener('click', exportAnswers);
+    initLightbox();
   });
 
 })();

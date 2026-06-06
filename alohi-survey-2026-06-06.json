@@ -1,0 +1,345 @@
+{
+  "exported": "2026-06-06T20:40:57.431Z",
+  "title": "Alohi Business HQ — Survey Answers",
+  "sections": {
+    "roadmap": {
+      "card_0": {
+        "notes": "I have reviewed the contract (with the help of AI). Cost of contract is $250 a year, which renews every April 1st. Current business structure is a sole proprietorship. Dedicated business account is with Amex blueprint business accounts. Business email is lohilohisan@gmail.com. I have a media kit for brand deals but not a rate card with set prices. I would like to be able to quit July 17th to be able to transition into content sooner.\n",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_1": {
+        "notes": "If it’s pitches to brand deals, I would be able to do that if I wasn’t with the agency. Merch is in the works currently. 65 hour commitment is for this month only. I have an expense tracker that I update myself. I have been doing the quarterly taxes. Currently with the lack of time no, but looking to have more time to focus on revenue. ",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_2": {
+        "notes": "Hopefully when I start getting brand deals. \nMerch is still in the works. \nI would like to, however I need to brand myself first. \nPatreon is already set.\nWithin the next year I will decide if it’s still worth staying.\nTaxes are being tracked.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      "card_3": {
+        "notes": "July 17th gives me time to plan but also soon enough that I wont be postponing it too far where I feel like I’m out of the content creation game.  ",
+        "checks": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "business-foundation": {
+      "card_0": {
+        "notes": "Currently working as a sole proprietorship due to the amount of current profit, based in Washington state. \nNot currently an LLC.\nI do have an EIN number.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_1": {
+        "notes": "Currently have an Amex blueprint business checking savings account, all content revenue goes to the business account. \nNo business credit cards yet, only debit. \nCurrently working on business PayPal. \nProcess is current revenue is going to the business account.",
+        "checks": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_2": {
+        "notes": "Business email address is lohilohisan@gmail.com.\nMedia kit is already made and syncing with analytics.\nPrevious invoices were made manually based on the brand deals. \nW-9 information filled before.",
+        "checks": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_3": {
+        "notes": "Looking into Washington health plan finder. \nNo business liability insurance currently.\nGear and equipment I currently have are usable. ",
+        "checks": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "contract": {
+      "card_0": {
+        "notes": "",
+        "checks": []
+      },
+      "card_1": {
+        "notes": "",
+        "checks": []
+      },
+      "card_2": {
+        "notes": "",
+        "checks": []
+      },
+      "card_3": {
+        "notes": "",
+        "checks": []
+      }
+    },
+    "finances": {
+      "card_0": {
+        "notes": "Currently have revenue from TikTok live, YouTube, patreon, twitch and Facebook. Brand deals currently all go through the agency. Merch not set up yet. Convention appearances are not paid currently. ",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_1": {
+        "notes": "Cosplays, props cosplay materials are all being tracked as business expenses. Editing software also being tracked as business expenses. Home office/ studio is the same as my personal room. Agency commission also being tracked as business expenses. Flights and travel being tracked depending on the reason.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_2": {
+        "notes": "Correct, because monthly income is inconsistent, to have a buffer is the goal. ",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_3": {
+        "notes": "Equipment and cosplay gifts are frequent. Rent and utilities are currently being paid by parents.",
+        "checks": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "accounting": {
+      "card_0": {
+        "notes": "Need a tracker for invoice logs to keep track of deals. ",
+        "checks": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_1": {
+        "notes": "All receipts are being kept in a separate folder for tax purposes. Both physical and electronic.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_2": {
+        "notes": "All quarterly taxes have been filed so far for the year 2026.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_3": {
+        "notes": "Tax documents are typically given early January to March of the following year. ",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "brand-deals": {
+      "card_0": {
+        "notes": "I agree with these rates.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_1": {
+        "notes": "These are all correct. ",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_2": {
+        "notes": "Having a separate log would help with keeping track of progress of individual brands.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_3": {
+        "notes": "These are all questions currently being asked from inbound inquiries.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "merch": {
+      "card_0": {
+        "notes": "Currently working on a logo.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_1": {
+        "notes": "Looking into print gum and have some experience with Shopify.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_2": {
+        "notes": "Having a log will also help with tracking orders.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_3": {
+        "notes": "Leaning towards tshirts or hats as a first product.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "content-strategy": {
+      "card_0": {
+        "notes": "YouTube is at 570k, twitch at 2k",
+        "checks": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_1": {
+        "notes": "I also have backlogs of travel content.\nSome content that goes viral are gym inspired content too.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_2": {
+        "notes": "Target of 4 hours over 4 days, I don’t want to burn myself out with streaming 5 days a week while working full time.\nVods don’t count, only specifically on tiktok live. ",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_3": {
+        "notes": "I have not consistently been posting on Instagram which is making engagement decline. \nCosplay or gym or makeup content drives more brand deal inquiries.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "calls": {
+      "card_0": {
+        "notes": "",
+        "checks": []
+      },
+      "card_1": {
+        "notes": "",
+        "checks": []
+      }
+    }
+  }
+}

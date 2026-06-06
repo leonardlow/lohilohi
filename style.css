@@ -439,6 +439,67 @@ body {
   margin-bottom: 0.2rem;
 }
 
+/* ── Program Image Strip ── */
+.program-images {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border);
+}
+
+.program-images-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.image-strip {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.image-strip img {
+  height: 280px;
+  width: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.image-strip img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ── Lightbox ── */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9998;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+#lightbox img {
+  max-height: 90vh;
+  max-width: 90vw;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
 /* ── Prep Link Cards (Calls tab) ── */
 .prep-links {
   margin-bottom: 1.5rem;
