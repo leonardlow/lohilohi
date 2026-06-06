@@ -439,6 +439,78 @@ body {
   margin-bottom: 0.2rem;
 }
 
+/* ── Prep Link Cards (Calls tab) ── */
+.prep-links {
+  margin-bottom: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.prep-links-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+
+.prep-links-desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.prep-link-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.prep-link-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.15s ease;
+}
+
+.prep-link-card:hover {
+  border-color: var(--primary-light);
+  background: #f5f3ff;
+  transform: translateX(3px);
+}
+
+.prep-link-icon { font-size: 1.75rem; flex-shrink: 0; }
+
+.prep-link-title {
+  font-size: 0.925rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.prep-link-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.prep-link-arrow {
+  margin-left: auto;
+  color: var(--primary);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
 /* ── Footer ── */
 .site-footer {
   text-align: center;
