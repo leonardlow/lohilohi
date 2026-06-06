@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-section="home">
 
   <header class="site-header">
     <h1>Alohi Business HQ</h1>
@@ -21,6 +21,11 @@
       ⏳&nbsp; <span><strong>Agency call — TBD.</strong> Once confirmed, drop notes into
       <a href="calls/index.html">Calls</a> and contract details into
       <a href="contract/index.html">Contract</a>.</span>
+    </div>
+
+    <div class="export-bar">
+      <p class="export-hint" id="export-hint">She's filled out some sections — export when she's done.</p>
+      <button class="export-btn" id="export-btn">⬇ Export Answers</button>
     </div>
 
     <div class="section-grid">
@@ -91,6 +96,7 @@
     </div>
   </main>
 
+  <script src="dashboard.js"></script>
   <footer class="site-footer">
     Alohi Business HQ &nbsp;·&nbsp; Private &nbsp;·&nbsp; Last updated June 2026
   </footer>

@@ -1,9 +1,5 @@
 (function () {
-  const PAGE_KEY = location.pathname
-    .replace(/^\//, '')
-    .replace(/\/index\.html$/, '')
-    .replace(/\.html$/, '')
-    .replace(/\//g, '__') || 'home';
+  const PAGE_KEY = document.body.dataset.section || 'home';
 
   function storageKey(cardIdx, type, itemIdx) {
     const base = `lohilohi__${PAGE_KEY}__card${cardIdx}__${type}`;

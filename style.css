@@ -314,6 +314,64 @@ body {
   margin-top: 3rem;
 }
 
+/* ── Card Completion States ── */
+.section-card.card-progress {
+  border-color: #fcd34d;
+  background: #fffbeb;
+}
+
+.section-card.card-progress::before {
+  background: linear-gradient(90deg, #f59e0b, #fcd34d);
+  opacity: 1;
+}
+
+.section-card.card-complete {
+  border-color: #6ee7b7;
+  background: #f0fdf4;
+}
+
+.section-card.card-complete::before {
+  background: linear-gradient(90deg, #10b981, #34d399);
+  opacity: 1;
+}
+
+/* ── Export Bar ── */
+.export-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.export-hint {
+  font-size: 0.8rem;
+  color: var(--muted);
+  display: none;
+}
+
+.export-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.25rem;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.export-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
 /* ── Checkboxes ── */
 .item-check {
   appearance: none;
