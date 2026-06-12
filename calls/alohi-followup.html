@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alohi — Written Follow-Up to Warens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="prep.css">
+  <style>
+    .email-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+    .email-header {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+    }
+    .email-field {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.875rem;
+      margin-bottom: 0.35rem;
+      align-items: baseline;
+    }
+    .email-field:last-child { margin-bottom: 0; }
+    .email-field-label {
+      font-weight: 600;
+      color: var(--muted);
+      width: 50px;
+      flex-shrink: 0;
+    }
+    .email-field-value { color: var(--text); }
+    .email-body {
+      padding: 1.5rem;
+      font-size: 0.925rem;
+      line-height: 1.75;
+      color: var(--text);
+      white-space: pre-wrap;
+      font-family: 'Inter', sans-serif;
+    }
+    .email-body strong { font-weight: 600; }
+    .copy-bar {
+      border-top: 1px solid var(--border);
+      padding: 0.875rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg);
+    }
+    .copy-hint { font-size: 0.8rem; color: var(--muted); }
+    .copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s ease;
+    }
+    .copy-btn:hover { opacity: 0.85; }
+    .copy-btn.copied { background: var(--success); }
+
+    .response-section { margin-top: 2.5rem; }
+    .response-intro {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+      line-height: 1.6;
+    }
+
+    @media print {
+      .no-print { display: none !important; }
+      .copy-bar { display: none; }
+      .email-block { box-shadow: none; border: 1px solid #ccc; }
+      .email-body { font-size: 0.875rem; }
+    }
+  </style>
+</head>
+<body data-prep-key="alohi-followup">
+
+  <header class="site-header no-print">
+    <h1>Alohi Business HQ</h1>
+    <p class="handle">@lohilohi &nbsp;·&nbsp; Creator Business Dashboard</p>
+  </header>
+
+  <div class="prep-nav no-print">
+    <a href="../index.html#calls" class="back-link">← Back to Dashboard</a>
+    <div class="prep-actions">
+      <button class="print-btn" id="print-btn">🖨 Print</button>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <div class="prep-header">
+      <div class="prep-tag">After Saturday's Meeting</div>
+      <h1 class="prep-title">Alohi's Written Follow-Up</h1>
+      <p class="prep-subtitle">Send this to Warens after the Saturday meeting — within a day or two while the conversation is still fresh. This is your follow-up as the talent, in your own voice. Written questions get written answers, and written answers are your paper trail.</p>
+      <div class="prep-reminder">
+        <strong>Before sending:</strong> Read through it and adjust any wording that doesn't sound like you. Add anything that came up in Saturday's meeting that you want answered. Remove anything already covered.
+        <br><br>
+        <strong>Send to:</strong> The agency email on file — copy yourself so you have a record.
+      </div>
+    </div>
+
+    <!-- ── Draft Email ── -->
+    <div class="email-block">
+      <div class="email-header">
+        <div class="email-field">
+          <span class="email-field-label">To:</span>
+          <span class="email-field-value">Warens — Wawa Productions</span>
+        </div>
+        <div class="email-field">
+          <span class="email-field-label">From:</span>
+          <span class="email-field-value">Alohi Barboza — lohilohisan@gmail.com</span>
+        </div>
+        <div class="email-field">
+          <span class="email-field-label">Subject:</span>
+          <span class="email-field-value">Follow-up from our meeting — a few questions</span>
+        </div>
+      </div>
+
+      <div class="email-body" id="email-body">Hi Warens,
+
+It was really great meeting with my parents on Saturday — thank you for taking the time. I appreciate you being open to having that conversation with us.
+
+After the meeting I wanted to follow up with a few questions in writing, just so I have a clear record of how things work as I get more organized on the business side. None of this is urgent, but I'd love to have clear answers so I can plan properly.
+
+<strong>1. Commission structure</strong>
+Can you walk me through exactly how the commission breakdown works? I want to make sure I understand who receives what percentage on each deal, and what the 1.5% administrative fee covers. I'm trying to get better at budgeting and forecasting my income, so having this clearly documented would really help.
+
+<strong>2. TikTok LIVE and platform income</strong>
+Just to confirm in writing — income I earn directly through TikTok LIVE (fan gifts, subscriptions, and milestone payouts from campaigns like the Creator Career Program) is fully mine and not subject to agency commission, correct? I want to make sure I'm accounting for everything properly.
+
+<strong>3. Deal history and pipeline</strong>
+Can you send me a summary of every partnership or paid deal you've negotiated on my behalf since we started working together in April 2025? I want to have a complete record for my own accounting, and it would also help me understand what's worked well so we can do more of it. I'd also love an update on anything currently in the pipeline.
+
+<strong>4. Inbound brand inquiries</strong>
+I've been forwarding brand inquiries that come to me directly over to the agency as agreed. Can you give me an update on what happened with those — which ones were pursued and the current status of each?
+
+<strong>5. Merchandise</strong>
+I'm in the early stages of building my own merchandise line — things I design and sell independently, like apparel and prints. I want to make sure I understand how that fits within our agreement. Is self-created merchandise something I can pursue on my own, or is there anything in our contract I need to be aware of before I move forward?
+
+<strong>6. Annual fee</strong>
+The contract mentions an annual agency fee of $250. Can you let me know the status of that — has it been charged, and if not, when should I expect it?
+
+<strong>7. Payment timeline</strong>
+When a brand deal payment comes in, what's the typical turnaround before I receive my portion? I want to make sure I'm planning my cash flow accurately.
+
+Thank you again for everything. I'm looking forward to a great year ahead and excited about what we can build together.
+
+Alohi</div>
+
+      <div class="copy-bar">
+        <span class="copy-hint">Copy the email, paste into Gmail, and personalize before sending.</span>
+        <button class="copy-btn" id="copy-btn">📋 Copy Email</button>
+      </div>
+    </div>
+
+    <!-- ── Response Tracking ── -->
+    <div class="response-section">
+      <div class="section-hero">
+        <h1 style="font-size:1.25rem; margin-bottom:0.35rem;">Track His Responses</h1>
+        <p class="subtitle">Once Warens replies, log each answer below. This becomes your reference and paper trail.</p>
+      </div>
+
+      <div class="response-intro">
+        Note his exact answers where possible — especially on the commission structure, TikTok income, and merch. If anything is vague or he says he'll "follow up," note that too.
+      </div>
+
+      <div class="prep-section" data-section-key="responses">
+        <h2 class="prep-section-title">His Written Responses</h2>
+
+        <div class="question-block" data-q-idx="0">
+          <p class="question-text">1. Commission structure — what did he confirm?</p>
+          <textarea class="answer-area" placeholder="His answer…"></textarea>
+          <span class="save-indicator">Saved ✓</span>
+        </div>
+
+        <div class="question-block" data-q-idx="1">
+          <p class="question-text">2. TikTok LIVE income — confirmed fully hers? Any exceptions?</p>
+          <textarea class="answer-area" placeholder="His answer…"></textarea>
+          <span class="save-indicator">Saved ✓</span>
+        </div>
+
+        <div class="question-block" data-q-idx="2">
+          <p class="question-text">3. Deal history — what deals did he list? What's in the pipeline?</p>
+          <textarea class="answer-area" placeholder="His answer…"></textarea>
+          <span class="save-indicator">Saved ✓</span>
+        </div>
+
+        <div class="question-block" data-q-idx="3">
+          <p class="question-text">4. Inbound inquiries — how many did he acknowledge? What happened to them?</p>
+          <textarea class="answer-area" placeholder="His answer…"></textarea>
+          <span class="save-indicator">Saved ✓</span>
+        </div>
+
+        <div class="question-block" data-q-idx="4">
+          <p class="question-text">5. Merchandise — is it outside the exclusivity? What exactly did he say?</p>
+          <textarea class="answer-area" placeholder="His answer…"></textarea>
+          <span class="save-indicator">Saved ✓</span>
+        </div>
+
+        <div class="question-block" data-q-idx="5">
+          <p class="question-text">6. Annual fee — what's the status? Waived, owed, or coming?</p>
+          <textarea class="answer-area" placeholder="His answer…"></textarea>
+          <span class="save-indicator">Saved ✓</span>
+        </div>
+
+        <div class="question-block" data-q-idx="6">
+          <p class="question-text">7. Payment timeline — how long does he say it takes?</p>
+          <textarea class="answer-area" placeholder="His answer…"></textarea>
+          <span class="save-indicator">Saved ✓</span>
+        </div>
+
+        <div class="question-block" data-q-idx="7">
+          <p class="question-text">Anything else he said in his reply worth noting?</p>
+          <textarea class="answer-area" placeholder="Additional notes…"></textarea>
+          <span class="save-indicator">Saved ✓</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer no-print">
+    Alohi Business HQ &nbsp;·&nbsp; Private &nbsp;·&nbsp; Written Follow-Up
+  </footer>
+
+  <script src="prep.js"></script>
+  <script>
+    document.getElementById('print-btn').addEventListener('click', () => window.print());
+
+    const copyBtn = document.getElementById('copy-btn');
+    copyBtn.addEventListener('click', () => {
+      const body = document.getElementById('email-body').innerText;
+      navigator.clipboard.writeText(body).then(() => {
+        copyBtn.textContent = '✓ Copied';
+        copyBtn.classList.add('copied');
+        setTimeout(() => {
+          copyBtn.textContent = '📋 Copy Email';
+          copyBtn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+  </script>
+
+</body>
+</html>
