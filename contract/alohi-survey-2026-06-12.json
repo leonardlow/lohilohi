@@ -1,0 +1,190 @@
+{
+  "exported": "2026-06-12T02:05:36.664Z",
+  "title": "Alohi Business HQ — Survey Answers",
+  "sections": {
+    "roadmap": {
+      "card_0": {
+        "notes": "",
+        "checks": []
+      },
+      "card_1": {
+        "notes": "",
+        "checks": []
+      },
+      "card_2": {
+        "notes": "",
+        "checks": []
+      },
+      "card_3": {
+        "notes": "",
+        "checks": []
+      }
+    },
+    "business-foundation": {
+      "card_0": {
+        "notes": "",
+        "checks": []
+      },
+      "card_1": {
+        "notes": "",
+        "checks": []
+      },
+      "card_2": {
+        "notes": "",
+        "checks": []
+      },
+      "card_3": {
+        "notes": "",
+        "checks": []
+      }
+    },
+    "contract": {
+      "card_0": {
+        "notes": "The 65 hours requirement is for tiktoks campaign specifically.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_1": {
+        "notes": "what do i do if they claim ownership of any content or brand identity",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_2": {
+        "notes": "Would this be for before or after the renewal.",
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "card_3": {
+        "notes": "Currently the only contract i have with them is with wawa production and not wawa live. ",
+        "checks": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "finances": {
+      "card_0": {
+        "notes": "",
+        "checks": []
+      },
+      "card_1": {
+        "notes": "",
+        "checks": []
+      },
+      "card_2": {
+        "notes": "",
+        "checks": []
+      },
+      "card_3": {
+        "notes": "",
+        "checks": []
+      }
+    },
+    "accounting": {
+      "card_0": {
+        "notes": "",
+        "checks": []
+      },
+      "card_1": {
+        "notes": "",
+        "checks": []
+      },
+      "card_2": {
+        "notes": "",
+        "checks": []
+      },
+      "card_3": {
+        "notes": "",
+        "checks": []
+      }
+    },
+    "brand-deals": {
+      "card_0": {
+        "notes": "",
+        "checks": []
+      },
+      "card_1": {
+        "notes": "",
+        "checks": []
+      },
+      "card_2": {
+        "notes": "",
+        "checks": []
+      },
+      "card_3": {
+        "notes": "",
+        "checks": []
+      }
+    },
+    "merch": {
+      "card_0": {
+        "notes": "",
+        "checks": []
+      },
+      "card_1": {
+        "notes": "",
+        "checks": []
+      },
+      "card_2": {
+        "notes": "",
+        "checks": []
+      },
+      "card_3": {
+        "notes": "",
+        "checks": []
+      }
+    },
+    "content-strategy": {
+      "card_0": {
+        "notes": "",
+        "checks": []
+      },
+      "card_1": {
+        "notes": "",
+        "checks": []
+      },
+      "card_2": {
+        "notes": "",
+        "checks": []
+      },
+      "card_3": {
+        "notes": "",
+        "checks": []
+      }
+    },
+    "calls": {
+      "card_0": {
+        "notes": "",
+        "checks": []
+      },
+      "card_1": {
+        "notes": "",
+        "checks": []
+      }
+    }
+  }
+}

@@ -32,153 +32,290 @@
   <main class="container">
 
     <!-- ══════════════════════════════════════
-         OVERVIEW TAB
+         HOME TAB
     ══════════════════════════════════════ -->
     <div class="tab-panel active" id="tab-overview">
 
-      <div class="status-banner">
-        ⏳&nbsp; <span><strong>Agency call — date TBD.</strong> Once confirmed, drop notes into
-        <span class="banner-link" data-target-tab="calls">Calls</span> and contract details into
-        <span class="banner-link" data-target-tab="contract">Contract</span>.</span>
+      <!-- Family Message -->
+      <div class="family-message">
+        <div class="family-message-eyebrow">A message from Mom &amp; Dad</div>
+        <div class="family-message-headline">Imua e Alohi.</div>
+        <ul class="family-message-body">
+          <li>Know your kuleana.</li>
+          <li>Operate from strength, not arrogance.</li>
+          <li>Be humble, but stand proud with confidence.</li>
+          <li>Know your worth and never compromise your integrity.</li>
+        </ul>
+        <div class="family-message-footer">Love You, Mom &amp; Dad 🌺</div>
       </div>
 
-      <div class="export-bar">
-        <p class="export-hint" id="export-hint">Sections are in progress — export when she's done.</p>
-        <button class="export-btn" id="export-btn">⬇ Export Answers</button>
+      <!-- Status Strip -->
+      <div class="status-strip">
+        <div class="status-pill pill-amber">
+          <span class="pill-label">Employment</span>
+          <span class="pill-value">Target exit July 17, 2026</span>
+          <span class="pill-count"><span id="countdown-exit">—</span><span class="pill-unit">days</span></span>
+        </div>
+        <div class="status-pill pill-red">
+          <span class="pill-label">Non-Renewal Notice Due</span>
+          <span class="pill-value">Must send by March 2, 2027</span>
+          <span class="pill-count"><span id="countdown-notice">—</span><span class="pill-unit">days</span></span>
+        </div>
+        <div class="status-pill pill-blue">
+          <span class="pill-label">Agency Contract Ends</span>
+          <span class="pill-value">April 1, 2027 — Wawa Productions</span>
+          <span class="pill-count"><span id="countdown-contract">—</span><span class="pill-unit">days</span></span>
+        </div>
       </div>
 
-      <div class="section-grid">
+      <!-- Platform Grid -->
+      <div class="content-card" style="margin-bottom:1.25rem;">
+        <h2 class="content-card-title" style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--primary);margin-bottom:1rem;">Your Audience</h2>
+        <div class="platform-grid">
+          <div class="platform-card">
+            <span class="platform-emoji">📱</span>
+            <div class="platform-name">TikTok</div>
+            <div class="platform-stat">1,000,000</div>
+            <div class="platform-sub">followers</div>
+          </div>
+          <div class="platform-card">
+            <span class="platform-emoji">▶️</span>
+            <div class="platform-name">YouTube</div>
+            <div class="platform-stat">570,000</div>
+            <div class="platform-sub">subscribers</div>
+          </div>
+          <div class="platform-card">
+            <span class="platform-emoji">📸</span>
+            <div class="platform-name">Instagram</div>
+            <div class="platform-stat">177,000</div>
+            <div class="platform-sub">followers</div>
+          </div>
+          <div class="platform-card">
+            <span class="platform-emoji">💜</span>
+            <div class="platform-name">Twitch</div>
+            <div class="platform-stat">2,000</div>
+            <div class="platform-sub">followers</div>
+          </div>
+          <div class="platform-card">
+            <span class="platform-emoji">🎭</span>
+            <div class="platform-name">Patreon</div>
+            <div class="platform-stat">Active</div>
+            <div class="platform-sub">membership</div>
+          </div>
+          <div class="platform-card">
+            <span class="platform-emoji">👥</span>
+            <div class="platform-name">Facebook</div>
+            <div class="platform-stat">Active</div>
+            <div class="platform-sub">monetized</div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Action Items -->
+      <div class="content-card">
+        <h2 class="content-card-title" style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--primary);margin-bottom:1rem;">Current Action Items</h2>
+        <ul class="action-list">
+          <li class="action-item" data-action-id="saturday-meeting">
+            <input type="checkbox" class="action-check">
+            <div>
+              <div class="action-text">Meet with Warens — Saturday family meeting with agency</div>
+              <span class="action-tag tag-now">This weekend</span>
+            </div>
+          </li>
+          <li class="action-item" data-action-id="warens-followup">
+            <input type="checkbox" class="action-check">
+            <div>
+              <div class="action-text">Send written follow-up email to Warens after Saturday's meeting</div>
+              <span class="action-tag tag-soon">After Saturday</span>
+            </div>
+          </li>
+          <li class="action-item" data-action-id="merch-confirm">
+            <input type="checkbox" class="action-check">
+            <div>
+              <div class="action-text">Confirm in writing that self-created merch is outside the agency exclusivity</div>
+              <span class="action-tag tag-soon">After Saturday</span>
+            </div>
+          </li>
+          <li class="action-item" data-action-id="health-insurance">
+            <input type="checkbox" class="action-check">
+            <div>
+              <div class="action-text">Secure health insurance through Washington Health Plan Finder before July 17</div>
+              <span class="action-tag tag-soon">Before July 17</span>
+            </div>
+          </li>
+          <li class="action-item" data-action-id="business-email">
+            <input type="checkbox" class="action-check">
+            <div>
+              <div class="action-text">Upgrade business email from Gmail to a custom domain (e.g. alohi@lohilohi.com)</div>
+              <span class="action-tag tag-soon">Before July 17</span>
+            </div>
+          </li>
+          <li class="action-item" data-action-id="rate-card">
+            <input type="checkbox" class="action-check">
+            <div>
+              <div class="action-text">Formalize rate card — include YouTube 570K in all brand deal packages</div>
+              <span class="action-tag tag-soon">Before July 17</span>
+            </div>
+          </li>
+          <li class="action-item" data-action-id="merch-logo">
+            <input type="checkbox" class="action-check">
+            <div>
+              <div class="action-text">Finalize logo — first step before merch can launch</div>
+              <span class="action-tag tag-soon">In progress</span>
+            </div>
+          </li>
+          <li class="action-item" data-action-id="non-renewal-notice">
+            <input type="checkbox" class="action-check">
+            <div>
+              <div class="action-text">Send written non-renewal notice to Warens — this date cannot be missed</div>
+              <span class="action-tag tag-date">By March 2, 2027</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Section Cards -->
+      <div class="section-grid" style="margin-top:1.25rem;">
         <div class="section-card" data-target-tab="roadmap" role="button" tabindex="0">
           <span class="card-icon">🗺️</span>
           <div class="card-title">Roadmap</div>
-          <div class="card-desc">The master plan — from content creator to business owner. Phases, milestones, and key decision points including the July 17th target date.</div>
-          <span class="card-status status-empty">Not started</span>
+          <div class="card-desc">Three phases — from now through full independence in April 2027 and beyond.</div>
+          <span class="card-status status-pending">Phase 1 active</span>
         </div>
-
         <div class="section-card" data-target-tab="business-foundation" role="button" tabindex="0">
           <span class="card-icon">🏢</span>
           <div class="card-title">Business Foundation</div>
-          <div class="card-desc">The legal and structural backbone — LLC, EIN, business banking, and what it actually means to run a real business, not just post content.</div>
-          <span class="card-status status-empty">Not started</span>
+          <div class="card-desc">What's built, what's still needed. EIN ✓, business account ✓, health insurance needed.</div>
+          <span class="card-status status-pending">4 items needed</span>
         </div>
-
         <div class="section-card" data-target-tab="contract" role="button" tabindex="0">
           <span class="card-icon">📄</span>
           <div class="card-title">Contract</div>
-          <div class="card-desc">The agency agreement in full detail — commission structure, exit clauses, IP ownership, the 65-hour streaming requirement, and what to watch for.</div>
-          <span class="card-status status-urgent">Awaiting call</span>
+          <div class="card-desc">Plain English: what you agreed to, what you can do freely, and when this ends.</div>
+          <span class="card-status status-urgent">Expires Apr 1, 2027</span>
         </div>
-
         <div class="section-card" data-target-tab="finances" role="button" tabindex="0">
           <span class="card-icon">💰</span>
           <div class="card-title">Finances</div>
-          <div class="card-desc">The real financial picture — income, true expenses, what's being fronted externally, and the actual path to replacing a $60K salary.</div>
-          <span class="card-status status-empty">Not started</span>
+          <div class="card-desc">Your income streams, the number you need to hit, and the financial rules to live by.</div>
+          <span class="card-status status-pending">Target: $80–90K/yr</span>
         </div>
-
         <div class="section-card" data-target-tab="accounting" role="button" tabindex="0">
           <span class="card-icon">📊</span>
           <div class="card-title">Accounting</div>
-          <div class="card-desc">The paper trail for every dollar. Invoices, receipts, write-offs (costumes, gear, travel), quarterly taxes, and records ready for a CPA.</div>
-          <span class="card-status status-empty">Not started</span>
+          <div class="card-desc">Quarterly taxes current ✓, expenses tracked ✓. Invoice log still needed.</div>
+          <span class="card-status status-active">Q2 2026 filed ✓</span>
         </div>
-
         <div class="section-card" data-target-tab="brand-deals" role="button" tabindex="0">
           <span class="card-icon">🤝</span>
           <div class="card-title">Brand Deals</div>
-          <div class="card-desc">Sponsorship pipeline from first contact to closed deal — rate cards, inbound inquiries, active negotiations, and repeat partnerships.</div>
-          <span class="card-status status-empty">Not started</span>
+          <div class="card-desc">Your rate card, inbound process, and what to do before agreeing to any deal.</div>
+          <span class="card-status status-pending">$5K/post starting rate</span>
         </div>
-
         <div class="section-card" data-target-tab="merch" role="button" tabindex="0">
           <span class="card-icon">👕</span>
           <div class="card-title">Merch</div>
-          <div class="card-desc">Alohi's fully owned product line — independent of the agency, no commission owed. Products, margins, fulfillment, and platform setup.</div>
-          <span class="card-status status-empty">Not started</span>
+          <div class="card-desc">Your owned revenue stream — no agency cut. Logo in progress, tees/hats as first product.</div>
+          <span class="card-status status-pending">Logo in progress</span>
         </div>
-
         <div class="section-card" data-target-tab="content-strategy" role="button" tabindex="0">
           <span class="card-icon">🎬</span>
           <div class="card-title">Content Strategy</div>
-          <div class="card-desc">Platform strategy, content pillars, and the 65-hour/month streaming commitment. Planning what gets posted, when, and why it matters.</div>
-          <span class="card-status status-empty">Not started</span>
+          <div class="card-desc">Platform breakdown, content pillars, and the TikTok Creator Career Program.</div>
+          <span class="card-status status-pending">Instagram needs attention</span>
         </div>
-
         <div class="section-card" data-target-tab="calls" role="button" tabindex="0">
           <span class="card-icon">📞</span>
-          <div class="card-title">Calls</div>
-          <div class="card-desc">Dated notes from every important conversation — agency meetings, brand calls, family strategy sessions, and agreed action items.</div>
-          <span class="card-status status-urgent">Awaiting call</span>
+          <div class="card-title">Calls &amp; Records</div>
+          <div class="card-desc">Meeting notes, follow-up tracking, and your paper trail going forward.</div>
+          <span class="card-status status-urgent">Saturday meeting</span>
         </div>
-
       </div>
+
     </div><!-- /overview -->
 
 
     <!-- ══════════════════════════════════════
          ROADMAP TAB
     ══════════════════════════════════════ -->
-    <div class="tab-panel" id="tab-roadmap" data-section="roadmap">
+    <div class="tab-panel" id="tab-roadmap">
       <div class="section-hero">
         <span class="hero-icon">🗺️</span>
         <h1>Roadmap</h1>
-        <p class="subtitle">The master plan — from content creator to business owner. Phased milestones, honest checkpoints, and what success actually looks like.</p>
+        <p class="subtitle">Three phases — building the foundation, growing under contract, then full independence. Each phase has a clear goal and a guardrail before moving to the next.</p>
       </div>
-      <div class="note">
-        <strong>Where we are now</strong>
-        Alohi is evaluating a major life decision — leaving a $60K/year job by July 17th. This roadmap exists to make sure that decision is backed by a real business, not just momentum.
-      </div>
+
       <div class="content-card">
-        <h2>Phase 1 — Foundation (Now → July 17)</h2>
-        <p>Before anything else, the basics have to be in place. This phase is about getting the business structure right so there's something real to jump into.</p>
+        <h2>Phase 1 — Build the Foundation</h2>
+        <p style="font-size:0.825rem;color:var(--muted);margin-bottom:0.75rem;"><strong>Now → July 17, 2026</strong></p>
+        <p>Before quitting the full-time job, the business structure needs to be solid enough to hold real income. This phase is about getting the basics right — not chasing growth yet.</p>
         <ul>
-          <li>Review and understand the agency contract in full</li>
-          <li>Determine what the agency actually delivers vs. what it costs</li>
-          <li>Form an LLC or confirm existing legal structure</li>
-          <li>Open a dedicated business bank account</li>
-          <li>Set up a business email address</li>
-          <li>Create a real rate card for brand deals</li>
-          <li>Establish a baseline of monthly income and actual expenses</li>
-          <li>Decide: quit July 17th, or push the date with a clearer target?</li>
+          <li>Complete Saturday meeting with Warens — understand the relationship clearly</li>
+          <li>Send written follow-up to Warens — get key terms confirmed in writing</li>
+          <li>Upgrade business email to a custom domain</li>
+          <li>Secure health insurance through WA Health Plan Finder</li>
+          <li>Formalize the rate card — include YouTube 570K in all packages</li>
+          <li>Confirm merch is outside agency exclusivity — in writing</li>
+          <li>Finalize logo — unlock merch launch</li>
         </ul>
       </div>
-      <div class="content-card">
-        <h2>Phase 2 — Systems (Months 1–3 Post-Job)</h2>
-        <p>Once she's full-time, the focus shifts to building repeatable revenue systems — not just posting and hoping for deposits.</p>
+
+      <div class="guardrail">
+        <div class="guardrail-title">⚠ Before You Quit July 17 — Check These First</div>
         <ul>
-          <li>Brand deal pipeline: 25–50 outbound pitches per week</li>
-          <li>Merch: launch first product or limited drop</li>
-          <li>Streaming: optimize the 65-hour commitment for actual revenue</li>
-          <li>Accounting: track every expense as a potential write-off</li>
-          <li>Quarterly tax payments begin (self-employment = ~25–30%)</li>
-          <li>Measure: is monthly revenue on pace to match or exceed $60K/year?</li>
+          <li>Health insurance secured and active before last day of employment</li>
+          <li>At least 3 months of living expenses in savings as a buffer</li>
+          <li>Quarterly tax payment schedule set up and current</li>
+          <li>Business email upgraded — brands need a professional address</li>
+          <li>Rate card formalized and ready to send to any brand inquiry</li>
         </ul>
       </div>
+
       <div class="content-card">
-        <h2>Phase 3 — Growth (Months 4–12)</h2>
-        <p>With systems running, the goal becomes compounding — more recurring revenue, fewer one-off deals, and real business independence.</p>
+        <h2>Phase 2 — Grow Under Contract</h2>
+        <p style="font-size:0.825rem;color:var(--muted);margin-bottom:0.75rem;"><strong>July 17, 2026 → April 1, 2027</strong></p>
+        <p>You're full-time, you're still under contract with Wawa. The goal is to maximize what's <em>outside</em> their scope — your LIVE income, your merch, your direct audience growth — while building the brand deals pipeline for after April 2027.</p>
         <ul>
-          <li>Convert brand deals into retainers and ambassador programs</li>
+          <li>Maximize TikTok LIVE income — this is fully yours, no agency cut</li>
+          <li>Launch merch — first product live, margins tracked</li>
+          <li>Post consistently on Instagram — engagement has been declining</li>
+          <li>Build YouTube content strategy — 570K is underused in brand deals</li>
+          <li>Document every brand deal the agency brings (or doesn't) — build your own record</li>
+          <li>Begin building brand relationships you source independently — these won't be subject to agency non-solicitation if you haven't been introduced through them</li>
+          <li>Set aside 25–30% of every payment for quarterly taxes — no exceptions</li>
+        </ul>
+      </div>
+
+      <div class="key-date-banner">
+        <div>
+          <div class="key-date-label">Critical Deadline — Do Not Miss</div>
+          <div class="key-date-value">March 2, 2027 — Send Written Non-Renewal Notice to Warens</div>
+        </div>
+        <div class="key-date-days">
+          <div class="key-date-days-num" id="countdown-notice-roadmap">—</div>
+          <div class="key-date-days-label">days away</div>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2>Phase 3 — Full Independence</h2>
+        <p style="font-size:0.825rem;color:var(--muted);margin-bottom:0.75rem;"><strong>April 1, 2027 onwards</strong></p>
+        <p>Contract expires. You own your full business. Every dollar of every deal stays on your terms. Phase 3 isn't a destination — it's the beginning of what you've been building toward.</p>
+        <ul>
+          <li>Run your own brand deal pipeline — 25–50 outbound pitches per week</li>
+          <li>Convert successful one-off deals into retainers and ambassadorships</li>
+          <li>Evaluate whether you need a new agent — on your terms, with better contract terms</li>
+          <li>Consider LLC formation if income has grown significantly</li>
           <li>Expand merch into a consistent product line</li>
-          <li>Evaluate convention appearances as a revenue stream</li>
-          <li>Build toward Patreon or membership community</li>
-          <li>Review agency relationship: is it still worth the commission?</li>
-          <li>Year-end: file taxes with full write-offs, assess net profitability</li>
+          <li>Explore convention appearances as a paid revenue stream</li>
+          <li>Build toward Patreon membership tiers and digital products</li>
         </ul>
       </div>
-      <div class="content-card">
-        <h2>Key Decision Points</h2>
-        <ul>
-          <li><strong>July 17, 2026</strong> — Potential last day at full-time job. Go/no-go decision.</li>
-          <li><strong>Month 3</strong> — Is revenue consistent enough to sustain? Adjust or press on.</li>
-          <li><strong>Month 6</strong> — Agency contract review: renegotiate, renew, or exit?</li>
-          <li><strong>Year 1</strong> — Full tax year as a business. Real profitability assessment.</li>
-        </ul>
-      </div>
-      <div class="empty-state">
-        <span class="empty-icon">📌</span>
-        <p>Detailed milestone documents will live here as we build them out.</p>
+
+      <div class="tab-notes" data-notes-key="roadmap">
+        <span class="tab-notes-label">Your notes &amp; updates</span>
+        <textarea class="tab-notes-area" placeholder="Add notes as things change…"></textarea>
+        <span class="tab-notes-indicator">Saved ✓</span>
       </div>
     </div><!-- /roadmap -->
 
@@ -186,126 +323,157 @@
     <!-- ══════════════════════════════════════
          BUSINESS FOUNDATION TAB
     ══════════════════════════════════════ -->
-    <div class="tab-panel" id="tab-business-foundation" data-section="business-foundation">
+    <div class="tab-panel" id="tab-business-foundation">
       <div class="section-hero">
         <span class="hero-icon">🏢</span>
         <h1>Business Foundation</h1>
-        <p class="subtitle">The legal and structural backbone of the business. This is what separates a hobby from a company — and what protects Alohi personally if something goes wrong.</p>
+        <p class="subtitle">What's in place and what still needs to happen. A business that looks profitable on the outside but is missing its foundation underneath is fragile.</p>
       </div>
-      <div class="note">
-        <strong>Why this matters first</strong>
-        Right now, Alohi is likely operating as a sole proprietor with no legal separation between her personal finances and her business. That means personal liability, no clear business credit, and tax headaches. This section fixes that.
-      </div>
+
       <div class="content-card">
-        <h2>Legal Structure</h2>
-        <p>What type of business entity is this? Most creators start as sole proprietors by default — but an LLC provides liability protection and looks more credible to brands.</p>
-        <ul>
-          <li>Has an LLC been formed? In what state?</li>
-          <li>Articles of Organization / LLC formation documents</li>
-          <li>Registered agent information</li>
-          <li>Operating agreement (even for a single-member LLC)</li>
-          <li>EIN (Employer Identification Number) — needed for bank account and taxes</li>
+        <h2>Current Status</h2>
+        <ul class="status-list">
+          <li><span class="status-badge badge-done">Done</span> Sole proprietorship — legal structure in place</li>
+          <li><span class="status-badge badge-done">Done</span> EIN (Employer Identification Number) obtained</li>
+          <li><span class="status-badge badge-done">Done</span> Amex Blueprint business checking + savings account</li>
+          <li><span class="status-badge badge-done">Done</span> W-9 on file — ready for brand payments</li>
+          <li><span class="status-badge badge-done">Done</span> Media kit — synced with analytics</li>
+          <li><span class="status-badge badge-done">Done</span> Invoices sent manually per deal</li>
+          <li><span class="status-badge badge-progress">In progress</span> Health insurance — researching WA Health Plan Finder</li>
+          <li><span class="status-badge badge-needed">Needed</span> Business email — upgrade from lohilohisan@gmail.com to custom domain</li>
+          <li><span class="status-badge badge-needed">Needed</span> Business liability insurance</li>
+          <li><span class="status-badge badge-needed">Needed</span> Formal rate card — currently not documented</li>
+          <li><span class="status-badge badge-needed">Needed</span> LLC — not yet formed (revisit when income grows consistently)</li>
         </ul>
       </div>
-      <div class="content-card">
-        <h2>Business Banking</h2>
-        <p>All business income and expenses must flow through a separate business account. Mixing personal and business money is one of the most common mistakes young creators make — it makes taxes a nightmare and undermines the LLC protection.</p>
+
+      <div class="guardrail">
+        <div class="guardrail-title">⚠ Before July 17 — These Must Be Done</div>
         <ul>
-          <li>Business checking account (separate from personal)</li>
-          <li>Business credit or debit card for expenses</li>
-          <li>PayPal or payment processor linked to business account</li>
-          <li>Process for moving income from TikTok/Instagram to business account</li>
+          <li>Health insurance active — losing employer coverage on last day</li>
+          <li>Business email upgraded — lohilohisan@gmail.com undermines $5,000+ deal negotiations</li>
+          <li>Rate card documented and ready to send</li>
         </ul>
       </div>
+
       <div class="content-card">
-        <h2>Business Identity</h2>
-        <p>The professional face of the business when dealing with brands and agencies.</p>
+        <h2>Business Banking — How It Works</h2>
+        <p>All content revenue flows to the Amex Blueprint business account. This separation between personal and business money is one of the most important habits you have — don't break it.</p>
         <ul>
-          <li>Business email address (not personal Gmail)</li>
-          <li>Media kit / one-pager for brand outreach</li>
-          <li>Standard invoice template</li>
-          <li>W-9 form on file (brands require this before payment)</li>
+          <li>All platform income (TikTok, YouTube, Patreon, Facebook) → business account</li>
+          <li>All brand deal payments → business account (through agency first, then to you)</li>
+          <li>All business expenses paid from business account — never personal</li>
+          <li>No business credit card yet — consider one for expense tracking clarity</li>
+          <li>Business PayPal in progress — needed for some brand payment methods</li>
         </ul>
       </div>
+
       <div class="content-card">
-        <h2>Insurance</h2>
-        <p>Often overlooked by creators — but relevant once income is real.</p>
+        <h2>LLC — Should You Form One?</h2>
+        <p>Right now, sole proprietorship is fine for your income level. An LLC makes more sense when:</p>
         <ul>
-          <li>Health insurance (no longer covered by employer after July 17th)</li>
-          <li>Business liability insurance</li>
-          <li>Equipment / gear insurance for cosplay production assets</li>
+          <li>Annual income consistently exceeds $50,000+ from the business</li>
+          <li>You're signing larger brand contracts with liability exposure</li>
+          <li>You have significant physical assets (studio, equipment) worth protecting</li>
+          <li>You want to appear more established to enterprise-level brands</li>
         </ul>
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:var(--muted);">When the time comes: Washington State LLC filing fee is $200. Revisit in Phase 2 once income is consistent.</p>
       </div>
-      <div class="empty-state">
-        <span class="empty-icon">🏗️</span>
-        <p>Documents and setup records will be added here as the foundation is built.</p>
+
+      <div class="tab-notes" data-notes-key="business-foundation">
+        <span class="tab-notes-label">Your notes &amp; updates</span>
+        <textarea class="tab-notes-area" placeholder="Add notes as things change…"></textarea>
+        <span class="tab-notes-indicator">Saved ✓</span>
       </div>
     </div><!-- /business-foundation -->
 
 
     <!-- ══════════════════════════════════════
-         CONTRACT TAB (protected)
+         CONTRACT TAB
     ══════════════════════════════════════ -->
-    <div class="tab-panel" id="tab-contract" data-section="contract">
+    <div class="tab-panel" id="tab-contract">
       <div class="section-hero">
         <span class="hero-icon">📄</span>
         <h1>Contract</h1>
-        <p class="subtitle">The agency agreement — what Alohi has signed, what she owes them, what they owe her, and what it takes to get out if needed.</p>
+        <p class="subtitle">Plain English — what you agreed to, who gets what, what you can do on your own, and the one date that cannot be missed.</p>
       </div>
-      <div class="note">
-        <strong>Agency call — date TBD</strong>
-        The goal of that call is to fully understand the contract before making any major decisions — especially before July 17th. Drop the contract document and call notes here afterward.
+
+      <div class="key-date-banner">
+        <div>
+          <div class="key-date-label">Most Important Date in This Contract</div>
+          <div class="key-date-value">March 2, 2027 — Send written non-renewal notice to Warens</div>
+        </div>
+        <div class="key-date-days">
+          <div class="key-date-days-num" id="countdown-notice-contract">—</div>
+          <div class="key-date-days-label">days away</div>
+        </div>
       </div>
+
       <div class="content-card">
-        <h2>Questions to Get Answered on the Call</h2>
-        <p>These are the non-negotiables. Every answer should be documented in the Calls tab.</p>
-        <ul>
-          <li>What is the exact commission rate? On which types of income?</li>
-          <li>Does commission apply to creator-sourced deals or only agency-sourced?</li>
-          <li>Does commission apply to TikTok/Instagram direct monetization?</li>
-          <li>Does commission apply to merch sales?</li>
-          <li>What is the contract term length? When does it expire?</li>
-          <li>What is the exit clause? How many days notice? Any penalties?</li>
-          <li>Who owns the content IP — Alohi or the agency?</li>
-          <li>Is there an exclusivity clause? What does it cover?</li>
-          <li>What exactly is the 65-hour streaming requirement? Is it enforceable?</li>
-          <li>What happens if she doesn't hit 65 hours in a given month?</li>
-          <li>What is the agency actively doing to generate deal flow right now?</li>
+        <h2>The Basics</h2>
+        <ul class="status-list">
+          <li><span class="status-badge badge-done">Who</span> Wawa Productions — CEO Mc Lee Warens Ambroise, Quebec, Canada</li>
+          <li><span class="status-badge badge-done">Term</span> April 1, 2026 → April 1, 2027 (Year 2 — auto-renewed)</li>
+          <li><span class="status-badge badge-done">Your cut</span> 75% of every brand deal</li>
+          <li><span class="status-badge badge-needed">Their cut</span> 25% total — 15% agency + 10% talent manager (both go to Warens)</li>
+          <li><span class="status-badge badge-done">Admin fee</span> 1.5% for payment processing — on top of the 25%</li>
+          <li><span class="status-badge badge-progress">Annual fee</span> $250 — listed in contract, not yet charged</li>
+          <li><span class="status-badge badge-done">Law</span> Province of Quebec, Canada — any disputes go to Canadian courts</li>
         </ul>
       </div>
-      <div class="content-card">
-        <h2>Red Flags to Watch For</h2>
+
+      <div class="free-zone">
+        <div class="free-zone-title">✅ Fully Yours — No Agency Approval Needed</div>
         <ul>
-          <li>Commission on ALL revenue regardless of who sourced the deal</li>
-          <li>Long exclusivity clauses with no carve-outs</li>
-          <li>Agency claims ownership of any content or brand identity</li>
-          <li>No clear exit clause or exit requires agency approval</li>
-          <li>Vague performance expectations with no accountability on their side</li>
-          <li>Automatic renewal language buried in the agreement</li>
+          <li>TikTok LIVE income — fan gifts, subscriptions, Creator Career Program payouts — TikTok pays you directly</li>
+          <li>YouTube ad revenue and channel monetization</li>
+          <li>Patreon membership income</li>
+          <li>Twitch subscriptions and bits</li>
+          <li>Facebook monetization</li>
+          <li>Your content — the contract does not transfer IP ownership. Your videos, your likeness, your brand identity are yours</li>
+          <li>Self-created merchandise (likely — confirm with Warens in writing after Saturday)</li>
         </ul>
       </div>
-      <div class="content-card">
-        <h2>Acceptable Terms (Reference)</h2>
+
+      <div class="guardrail">
+        <div class="guardrail-title">⚠ These Require Warens — Do Not Proceed Without Him</div>
         <ul>
-          <li>Commission: 20% maximum on agency-sourced deals only</li>
-          <li>0–10% on creator-sourced deals</li>
-          <li>Exit clause: 30–60 days notice, no financial penalty</li>
-          <li>IP: Alohi retains full ownership of all content and brand identity</li>
-          <li>No exclusivity on merch, direct fan income, or personal ventures</li>
+          <li>Brand deals, sponsorships, and paid partnerships of any kind</li>
+          <li>Licensing agreements and commercial collaborations</li>
+          <li>Public appearances, conventions, and events — must be reviewed and cleared first</li>
+          <li>Any agreement with a third party offering similar agency services</li>
+          <li>If a brand contacts you directly — forward to Warens before responding with any commitment</li>
         </ul>
       </div>
+
       <div class="content-card">
-        <h2>Documents</h2>
+        <h2>The Exit — What Happens When Contract Ends</h2>
         <ul>
-          <li>Current agency agreement (to be added after call)</li>
-          <li>Any amendments or addendums</li>
-          <li>The 65-hour streaming clause in writing</li>
-          <li>Commission schedule breakdown</li>
+          <li>Give written notice of non-renewal by <strong>March 2, 2027</strong> — 30 days before April 1</li>
+          <li>Any brand contracts active at termination remain under agency management until completed</li>
+          <li>For 12 months after exit: cannot independently work with brands the agency introduced without their written permission</li>
+          <li>Confidentiality clause survives termination indefinitely — never share agency strategy, client lists, or internal rates</li>
+          <li>There is no early exit option in the current contract — April 1, 2027 is the earliest clean exit</li>
         </ul>
       </div>
-      <div class="empty-state">
-        <span class="empty-icon">📋</span>
-        <p>Contract documents and annotated terms will be added here after the call.</p>
+
+      <div class="content-card">
+        <h2>What Better Terms Look Like in 2027</h2>
+        <p style="font-size:0.875rem;color:var(--muted);margin-bottom:0.75rem;">If you choose to work with an agency after April 2027, know what to ask for:</p>
+        <ul>
+          <li>Commission: 20% maximum — on agency-sourced deals only</li>
+          <li>0–10% on deals you source yourself</li>
+          <li>Exit clause: 30–60 days written notice, no financial penalty</li>
+          <li>IP: You retain full ownership of all content and brand identity</li>
+          <li>No exclusivity on merch, direct fan income, or self-created products</li>
+          <li>Governing law: Washington State — not a foreign country</li>
+        </ul>
+      </div>
+
+      <div class="tab-notes" data-notes-key="contract">
+        <span class="tab-notes-label">Notes from Warens meeting &amp; follow-up</span>
+        <textarea class="tab-notes-area" placeholder="Add responses and clarifications from Warens here…"></textarea>
+        <span class="tab-notes-indicator">Saved ✓</span>
       </div>
     </div><!-- /contract -->
 
@@ -313,68 +481,63 @@
     <!-- ══════════════════════════════════════
          FINANCES TAB
     ══════════════════════════════════════ -->
-    <div class="tab-panel" id="tab-finances" data-section="finances">
+    <div class="tab-panel" id="tab-finances">
       <div class="section-hero">
         <span class="hero-icon">💰</span>
         <h1>Finances</h1>
-        <p class="subtitle">The real financial picture — not just what comes in, but what actually stays after expenses, taxes, and costs that may currently be invisible.</p>
+        <p class="subtitle">The real picture — every income stream, the number you need to hit, and the rules that keep the business financially healthy.</p>
       </div>
-      <div class="note">
-        <strong>The hard truth</strong>
-        A creator can look profitable while someone else is quietly absorbing the costs. Costumes, props, equipment, software, convention travel — if those aren't tracked as business expenses, the "profit" number is fiction. This section makes the real number visible.
-      </div>
+
       <div class="content-card">
-        <h2>Income Streams</h2>
-        <p>Every source of revenue, tracked separately so we know what's actually working.</p>
+        <h2>The Target Number</h2>
+        <p>Your current full-time job pays approximately <strong>$60,000/year ($5,000/month gross)</strong>. As a self-employed creator, you need to earn more to net the same — because:</p>
         <ul>
-          <li>TikTok Creator Fund / TikTok LIVE gifts and subscriptions</li>
-          <li>Instagram monetization</li>
-          <li>Brand deal payments (agency-sourced)</li>
-          <li>Brand deal payments (self-sourced)</li>
-          <li>Merch sales (net after platform fees)</li>
-          <li>Convention appearances / paid events</li>
-          <li>Patreon or membership income (future)</li>
+          <li>Self-employment tax: ~15.3% (you pay both employee + employer share)</li>
+          <li>No employer health insurance — you cover it yourself</li>
+          <li>No paid time off, sick days, or 401(k) match</li>
+          <li>Income is inconsistent — need a buffer for slow months</li>
+        </ul>
+        <p style="margin-top:0.75rem;"><strong>Target gross revenue: $80,000–$90,000/year</strong> to net equivalent take-home after taxes and costs.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>Your Income Streams</h2>
+        <ul>
+          <li><strong>TikTok LIVE</strong> — fan gifts, subscriptions, Creator Career Program payouts (fully yours, no agency cut)</li>
+          <li><strong>YouTube</strong> — ad revenue on 570K subscribers (fully yours)</li>
+          <li><strong>Patreon</strong> — membership income (fully yours)</li>
+          <li><strong>Twitch</strong> — subscriptions and bits (fully yours)</li>
+          <li><strong>Facebook</strong> — monetization (fully yours)</li>
+          <li><strong>Brand deals via agency</strong> — 75% to you after agency commission</li>
+          <li><strong>Merch</strong> — coming soon; 100% owned, subject to platform fees only</li>
         </ul>
       </div>
+
       <div class="content-card">
-        <h2>Business Expenses</h2>
-        <p>These are real costs of doing business — they reduce taxable income and must be tracked. If someone else is paying them, that is a loan or a gift, not free money.</p>
+        <h2>What's Currently Being Subsidized</h2>
+        <p style="font-size:0.875rem;color:var(--muted);margin-bottom:0.75rem;">This is important for an honest picture of your real profitability. These costs exist — they're just not coming out of your pocket yet:</p>
         <ul>
-          <li>Costumes, props, and cosplay materials</li>
-          <li>Camera, lighting, and production equipment</li>
-          <li>Editing software and subscriptions</li>
-          <li>Convention registration and travel</li>
-          <li>Home office / studio space allocation</li>
-          <li>Hair, makeup, styling for content</li>
-          <li>Shipping and packaging (for merch)</li>
-          <li>Business email, website, and tools</li>
-          <li>Agency commission (deducted from gross)</li>
+          <li>Rent and utilities — currently covered by parents</li>
+          <li>Equipment and cosplay gifts — frequently provided externally</li>
+        </ul>
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:var(--muted);">As you move toward independence, these become your business expenses. Factor them into your income target.</p>
+      </div>
+
+      <div class="guardrail">
+        <div class="guardrail-title">⚠ Financial Rules — Non-Negotiable</div>
+        <ul>
+          <li>Set aside 25–30% of every single payment for quarterly taxes — before spending anything else</li>
+          <li>Never mix personal and business money — all income goes to the Amex Blueprint account</li>
+          <li>Always invoice before or upon payment — no invoice, no deal</li>
+          <li>Do not quit your job until you have 3 consistent months of creator income at or above your salary target</li>
+          <li>Every business expense gets a receipt — digital or physical, saved immediately</li>
         </ul>
       </div>
-      <div class="content-card">
-        <h2>The Salary Replacement Target</h2>
-        <p>Alohi's current employment income is approximately <strong>$60,000/year ($5,000/month gross)</strong>. To replace that as a self-employed creator, she needs to earn significantly more because:</p>
-        <ul>
-          <li>Self-employment tax is ~15.3% on top of income tax</li>
-          <li>No employer-sponsored health insurance</li>
-          <li>No 401(k) match or paid time off</li>
-          <li>Inconsistent monthly income — need a buffer</li>
-          <li>Target gross revenue: <strong>$80,000–$90,000/year</strong> to net equivalent take-home</li>
-        </ul>
-      </div>
-      <div class="content-card">
-        <h2>Externally Fronted Costs</h2>
-        <p>Costs currently being covered by others must be logged here. This is not about guilt — it's about building an accurate picture of what the business actually costs to run.</p>
-        <ul>
-          <li>Equipment purchased on behalf of Alohi</li>
-          <li>Costume and production costs covered externally</li>
-          <li>Any travel, convention, or event costs fronted</li>
-          <li>Software or subscription costs paid by others</li>
-        </ul>
-      </div>
-      <div class="empty-state">
-        <span class="empty-icon">📈</span>
-        <p>Monthly income and expense summaries will be tracked here once the business is operational.</p>
+
+      <div class="tab-notes" data-notes-key="finances">
+        <span class="tab-notes-label">Monthly income &amp; expense notes</span>
+        <textarea class="tab-notes-area" placeholder="Track monthly income, expenses, and financial milestones here…"></textarea>
+        <span class="tab-notes-indicator">Saved ✓</span>
       </div>
     </div><!-- /finances -->
 
@@ -382,65 +545,57 @@
     <!-- ══════════════════════════════════════
          ACCOUNTING TAB
     ══════════════════════════════════════ -->
-    <div class="tab-panel" id="tab-accounting" data-section="accounting">
+    <div class="tab-panel" id="tab-accounting">
       <div class="section-hero">
         <span class="hero-icon">📊</span>
         <h1>Accounting</h1>
-        <p class="subtitle">The paper trail — every dollar in and out, documented. This is what gets handed to a CPA at tax time and what protects Alohi in an audit.</p>
+        <p class="subtitle">The paper trail that protects you at tax time and in any dispute. You're already ahead of most creators — keep it up.</p>
       </div>
-      <div class="note">
-        <strong>Self-employment tax is real</strong>
-        As a self-employed creator, Alohi pays both the employee AND employer share of Social Security and Medicare — roughly 15.3% on top of regular income tax. Proper accounting with write-offs is how that number gets smaller.
-      </div>
+
       <div class="content-card">
-        <h2>Invoices</h2>
-        <p>Every brand deal should have an invoice sent before or upon payment. Invoices protect Alohi legally and create a clear paper trail.</p>
-        <ul>
-          <li>Invoice template (reusable, with her business name and EIN)</li>
-          <li>Sent invoices by month and brand</li>
-          <li>Payment status tracking (sent, pending, paid)</li>
-          <li>Late payment follow-up log</li>
+        <h2>Current Status</h2>
+        <ul class="status-list">
+          <li><span class="status-badge badge-done">Done</span> 2026 quarterly taxes — all filed and current</li>
+          <li><span class="status-badge badge-done">Done</span> Expense tracker — actively maintained</li>
+          <li><span class="status-badge badge-done">Done</span> Receipts — saved physically and electronically</li>
+          <li><span class="status-badge badge-done">Done</span> Tax documents — organized for annual filing</li>
+          <li><span class="status-badge badge-needed">Needed</span> Invoice log — a running record of every deal invoiced, status, and amount</li>
         </ul>
       </div>
+
       <div class="content-card">
-        <h2>Expense Receipts</h2>
-        <p>Every business expense needs a receipt. These are the write-offs that reduce taxable income — possibly saving thousands per year. The IRS expects documentation.</p>
+        <h2>Quarterly Tax Dates — 2026</h2>
         <ul>
-          <li>Costume and prop purchases</li>
-          <li>Camera, lighting, microphone, and production gear</li>
-          <li>Editing software (Adobe, DaVinci, etc.)</li>
+          <li><strong>Q1 — April 15, 2026</strong> ✓ Filed</li>
+          <li><strong>Q2 — June 16, 2026</strong> ✓ Filed</li>
+          <li><strong>Q3 — September 15, 2026</strong> — upcoming</li>
+          <li><strong>Q4 — January 15, 2027</strong> — upcoming</li>
+        </ul>
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:var(--muted);">Rule: set aside 25–30% of every payment the moment it arrives. Pay quarterly, never skip.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>Write-Off Reference — These Are Business Expenses</h2>
+        <p style="font-size:0.875rem;color:var(--muted);margin-bottom:0.75rem;">Every dollar spent on these reduces your taxable income. Keep every receipt.</p>
+        <ul>
+          <li>Cosplay costumes, props, and materials</li>
+          <li>Camera, lighting, microphone, and production equipment</li>
+          <li>Editing software subscriptions (Adobe, DaVinci, etc.)</li>
           <li>Convention registration fees</li>
-          <li>Travel: flights, hotels, rideshare (for business purposes)</li>
-          <li>Hair, makeup, and styling for content production</li>
-          <li>Home office: portion of rent/utilities if applicable</li>
-          <li>Business subscriptions and software tools</li>
+          <li>Travel to conventions or brand events (flights, hotels, rideshare)</li>
+          <li>Hair, makeup, and styling specifically for content production</li>
+          <li>Business email and website hosting</li>
           <li>Merch production and shipping costs</li>
+          <li>Agency commission paid (deducted from gross income)</li>
+          <li>Home office — portion of rent/utilities (requires consistent dedicated space)</li>
+          <li>Phone — portion used for business</li>
         </ul>
       </div>
-      <div class="content-card">
-        <h2>Quarterly Tax Estimates</h2>
-        <p>Self-employed creators must pay estimated taxes 4x per year. Missing these results in penalties. Dates to know:</p>
-        <ul>
-          <li>Q1: April 15</li>
-          <li>Q2: June 16</li>
-          <li>Q3: September 15</li>
-          <li>Q4: January 15 (following year)</li>
-          <li>Set aside ~25–30% of every payment received</li>
-        </ul>
-      </div>
-      <div class="content-card">
-        <h2>Annual Records</h2>
-        <ul>
-          <li>1099-NEC forms (from brands that paid $600+ in a year)</li>
-          <li>TikTok and platform earnings statements</li>
-          <li>Year-end profit and loss summary</li>
-          <li>Prior year tax returns (for reference)</li>
-          <li>CPA contact and annual filing calendar</li>
-        </ul>
-      </div>
-      <div class="empty-state">
-        <span class="empty-icon">🧾</span>
-        <p>Receipts, invoices, and tax records will be organized here as the business launches.</p>
+
+      <div class="tab-notes" data-notes-key="accounting">
+        <span class="tab-notes-label">Invoice log &amp; accounting notes</span>
+        <textarea class="tab-notes-area" placeholder="Track invoices, payments received, and accounting notes here…"></textarea>
+        <span class="tab-notes-indicator">Saved ✓</span>
       </div>
     </div><!-- /accounting -->
 
@@ -448,67 +603,89 @@
     <!-- ══════════════════════════════════════
          BRAND DEALS TAB
     ══════════════════════════════════════ -->
-    <div class="tab-panel" id="tab-brand-deals" data-section="brand-deals">
+    <div class="tab-panel" id="tab-brand-deals">
       <div class="section-hero">
         <span class="hero-icon">🤝</span>
         <h1>Brand Deals</h1>
-        <p class="subtitle">Sponsorship pipeline — from first contact to closed deal. The goal is to treat this like sales, not luck. Consistent outreach, confident pricing, and repeat business.</p>
+        <p class="subtitle">Your rate card, your process, and the rules that protect your value. Never apologize for your pricing. Never discount without reducing scope first.</p>
       </div>
-      <div class="note">
-        <strong>The biggest opportunity right now</strong>
-        Alohi has 1M+ TikTok followers and is under-monetized. Brand deals are the fastest path to real income. The key is being proactive — most creators wait for inbound. The ones who win send 25–50 pitches a week.
-      </div>
+
       <div class="content-card">
-        <h2>Rate Card</h2>
-        <p>Starting rates — state these confidently and never apologize for them. Never immediately discount; reduce scope instead.</p>
+        <h2>Your Rate Card</h2>
+        <div class="rate-card-grid">
+          <div class="rate-item">
+            <div class="rate-item-label">Single TikTok Post</div>
+            <div class="rate-item-value">$5,000</div>
+            <div class="rate-item-sub">starting rate</div>
+          </div>
+          <div class="rate-item">
+            <div class="rate-item-label">TikTok + Instagram Bundle</div>
+            <div class="rate-item-value">$6,500–$8,000</div>
+            <div class="rate-item-sub">multi-platform</div>
+          </div>
+          <div class="rate-item">
+            <div class="rate-item-label">Usage Rights</div>
+            <div class="rate-item-value">+30–100%</div>
+            <div class="rate-item-sub">brand repurposes content</div>
+          </div>
+          <div class="rate-item">
+            <div class="rate-item-label">Exclusivity</div>
+            <div class="rate-item-value">+20–50%</div>
+            <div class="rate-item-sub">can't work with competitors</div>
+          </div>
+          <div class="rate-item">
+            <div class="rate-item-label">YouTube (570K)</div>
+            <div class="rate-item-value">Add to all packages</div>
+            <div class="rate-item-sub">currently underused in pitches</div>
+          </div>
+          <div class="rate-item">
+            <div class="rate-item-label">TikTok LIVE Integration</div>
+            <div class="rate-item-value">Negotiate separately</div>
+            <div class="rate-item-sub">case by case</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="guardrail">
+        <div class="guardrail-title">⚠ Before Agreeing to Any Brand Deal</div>
         <ul>
-          <li>Single TikTok post: <strong>$5,000</strong></li>
-          <li>TikTok + Instagram bundle: <strong>$6,500–$8,000</strong></li>
-          <li>Usage rights (brand can repurpose content): <strong>+30–100%</strong></li>
-          <li>Exclusivity (can't work with competitors): <strong>+20–50%</strong></li>
-          <li>TikTok LIVE integration: negotiate separately</li>
+          <li>All deals currently go through Warens — forward inbound inquiries to him before responding</li>
+          <li>Never agree to a price verbally — let Warens handle negotiations</li>
+          <li>If a brand offers a low budget, do not discount — reduce the scope of deliverables instead</li>
+          <li>Require usage rights and exclusivity to be clearly stated in writing before signing anything</li>
+          <li>Always invoice before or upon first payment — no verbal handshake deals</li>
         </ul>
       </div>
+
+      <div class="content-card">
+        <h2>Inbound Inquiry Process</h2>
+        <p style="font-size:0.875rem;color:var(--muted);margin-bottom:0.75rem;">When a brand contacts you directly — this is what happens:</p>
+        <ul>
+          <li>Acknowledge receipt — do not commit to anything</li>
+          <li>Forward the inquiry to Warens for handling</li>
+          <li>If they ask about pricing, say: "My management team will be in touch"</li>
+          <li>After April 2027 (post-agency): respond directly using the rate card above</li>
+        </ul>
+      </div>
+
       <div class="content-card">
         <h2>Target Brand Categories</h2>
-        <p>Brands most aligned with Alohi's audience and content niche.</p>
         <ul>
           <li>Anime merchandise and figure manufacturers</li>
           <li>Gaming companies and streaming platforms</li>
           <li>Cosplay and costume suppliers</li>
           <li>Apparel and streetwear brands</li>
-          <li>Convention organizers (Anime Expo, Fan Expo, etc.)</li>
-          <li>Collectibles and limited edition releases</li>
+          <li>Convention organizers — Anime Expo, Fan Expo, etc.</li>
           <li>Beauty and makeup brands</li>
-          <li>Tech accessories (LED, ring lights, stream gear)</li>
+          <li>Gym and fitness brands (gym content also drives inquiries)</li>
+          <li>Tech accessories — LED, ring lights, stream gear</li>
         </ul>
       </div>
-      <div class="content-card">
-        <h2>Pipeline Stages</h2>
-        <ul>
-          <li><strong>Prospecting</strong> — brands identified, not yet contacted</li>
-          <li><strong>Outreach sent</strong> — pitch email or DM sent, awaiting response</li>
-          <li><strong>In conversation</strong> — brand responded, discussing scope/budget</li>
-          <li><strong>Negotiating</strong> — offer on the table, counter in progress</li>
-          <li><strong>Closed / Won</strong> — deal signed, invoice sent</li>
-          <li><strong>Delivered</strong> — content posted, payment received</li>
-          <li><strong>Follow-up</strong> — post-campaign check-in for repeat business</li>
-        </ul>
-      </div>
-      <div class="content-card">
-        <h2>Inbound Inquiry Response</h2>
-        <p>Every brand inquiry gets this response first — it filters low-budget leads and establishes professionalism before any pricing is shared:</p>
-        <ul>
-          <li>Thanks for reaching out — what are the campaign goals?</li>
-          <li>What deliverables are you looking for?</li>
-          <li>What's the timeline?</li>
-          <li>What's the budget range?</li>
-          <li>Are usage rights or exclusivity required?</li>
-        </ul>
-      </div>
-      <div class="empty-state">
-        <span class="empty-icon">📬</span>
-        <p>Brand prospects, active deals, and closed campaigns will be tracked here.</p>
+
+      <div class="tab-notes" data-notes-key="brand-deals">
+        <span class="tab-notes-label">Pipeline &amp; deal notes</span>
+        <textarea class="tab-notes-area" placeholder="Track active brand conversations, pipeline status, and deal notes here…"></textarea>
+        <span class="tab-notes-indicator">Saved ✓</span>
       </div>
     </div><!-- /brand-deals -->
 
@@ -516,66 +693,64 @@
     <!-- ══════════════════════════════════════
          MERCH TAB
     ══════════════════════════════════════ -->
-    <div class="tab-panel" id="tab-merch" data-section="merch">
+    <div class="tab-panel" id="tab-merch">
       <div class="section-hero">
         <span class="hero-icon">👕</span>
         <h1>Merch</h1>
-        <p class="subtitle">Alohi's fully owned product line — independent of the agency, no commission owed to anyone. This is the revenue stream she builds and keeps entirely.</p>
+        <p class="subtitle">Your owned revenue stream — no agency cut, no approval needed (once confirmed with Warens). Every dollar of margin stays with you.</p>
       </div>
-      <div class="note">
-        <strong>Why merch is different from brand deals</strong>
-        Brand deals are income she earns by promoting someone else's product. Merch is a business she owns — she sets the prices, controls the brand, and keeps the margins. No agency cut. No approval needed.
-      </div>
+
       <div class="content-card">
-        <h2>Product Concepts</h2>
-        <p>Starting ideas based on her existing audience and cosplay identity. Limited drops tied to viral moments tend to perform best.</p>
-        <ul>
-          <li>Cosplay-themed apparel (hoodies, tees, crop tops)</li>
-          <li>Prints and art prints from popular cosplay shoots</li>
-          <li>Accessories (pins, keychains, phone cases) tied to specific fandoms</li>
-          <li>Limited edition drops around convention appearances</li>
-          <li>Signed memorabilia for superfans</li>
-          <li>Digital products: cosplay guides, preset packs, tutorials</li>
+        <h2>Where Things Stand</h2>
+        <ul class="status-list">
+          <li><span class="status-badge badge-progress">In progress</span> Logo design — first step before anything else launches</li>
+          <li><span class="status-badge badge-progress">In progress</span> Confirming merch is outside agency exclusivity — ask Warens in writing post-Saturday</li>
+          <li><span class="status-badge badge-needed">Not started</span> Shopify store — have experience with the platform</li>
+          <li><span class="status-badge badge-needed">Not started</span> Printify setup — print-on-demand, no upfront inventory cost</li>
+          <li><span class="status-badge badge-needed">Not started</span> First product — leaning toward t-shirts or hats</li>
+          <li><span class="status-badge badge-needed">Not started</span> Margin analysis — must be done before any product is priced</li>
         </ul>
       </div>
-      <div class="content-card">
-        <h2>Fulfillment Options</h2>
-        <p>Print-on-demand means no upfront inventory cost — ideal for starting out. As volume grows, direct fulfillment improves margins.</p>
+
+      <div class="guardrail">
+        <div class="guardrail-title">⚠ Before You Launch — Complete This Checklist First</div>
         <ul>
-          <li><strong>Printify</strong> — print-on-demand, integrates with Shopify, low risk</li>
-          <li><strong>Printful</strong> — similar to Printify, strong quality control</li>
-          <li><strong>Shopify</strong> — storefront platform, owns the customer relationship</li>
-          <li><strong>Spring (formerly Teespring)</strong> — creator-native, lower setup friction</li>
-          <li><strong>Direct fulfillment</strong> — higher margin, requires inventory management</li>
+          <li>Logo finalized and ready for print</li>
+          <li>Written confirmation from Warens that merch is outside the exclusivity</li>
+          <li>Margin analysis done — target 40–60% margin minimum</li>
+          <li>Shopify store set up and tested with a test order</li>
+          <li>Printify product quality verified before going live</li>
+          <li>Launch content planned — tie it to existing audience and a moment (cosplay reveal, convention, viral post)</li>
         </ul>
       </div>
+
       <div class="content-card">
-        <h2>Margin Awareness</h2>
-        <p>Merch is only worth pursuing if the numbers make sense. Every product needs a margin analysis before launch.</p>
+        <h2>Margin Reference</h2>
+        <p style="font-size:0.875rem;color:var(--muted);margin-bottom:0.75rem;">Run this calculation on every product before you set a price:</p>
         <ul>
-          <li>Product cost (printing + materials)</li>
-          <li>Platform fee (Shopify, Printify, etc.)</li>
-          <li>Shipping cost to customer</li>
-          <li>Payment processing fee (~3%)</li>
-          <li>Retail price minus all of the above = actual margin</li>
-          <li>Target: 40–60% margin minimum</li>
+          <li>Product cost (Printify printing + materials)</li>
+          <li>Shopify transaction fee (~2.9% + $0.30)</li>
+          <li>Shipping to customer (or offer free shipping and build it in)</li>
+          <li>Retail price minus all of the above = your actual margin</li>
+          <li><strong>Target: 40–60% margin minimum</strong> — below 40% and it's not worth the effort</li>
         </ul>
       </div>
+
       <div class="content-card">
-        <h2>Launch Checklist</h2>
+        <h2>First Product Ideas</h2>
         <ul>
-          <li>Define first product or limited drop concept</li>
-          <li>Choose fulfillment platform</li>
-          <li>Set up storefront (Shopify or equivalent)</li>
-          <li>Run margin analysis before pricing</li>
-          <li>Create launch content tied to existing audience</li>
-          <li>Link store in TikTok and Instagram bio</li>
-          <li>Set up order tracking and customer email</li>
+          <li><strong>T-shirts or hoodies</strong> — Alohi's first instinct, correct for building a fanbase</li>
+          <li><strong>Hats</strong> — lower cost, strong margins, wearable daily</li>
+          <li>Tie the first drop to a viral cosplay moment — limited edition increases urgency</li>
+          <li>Digital products (guides, presets) — zero production cost, pure margin, launch anytime</li>
+          <li>Prints from popular cosplay shoots — low cost, high perceived value for fans</li>
         </ul>
       </div>
-      <div class="empty-state">
-        <span class="empty-icon">🛍️</span>
-        <p>Product lineup, margin sheets, and launch plans will be built out here.</p>
+
+      <div class="tab-notes" data-notes-key="merch">
+        <span class="tab-notes-label">Merch progress notes</span>
+        <textarea class="tab-notes-area" placeholder="Track logo status, product decisions, launch timeline, and margin calculations here…"></textarea>
+        <span class="tab-notes-indicator">Saved ✓</span>
       </div>
     </div><!-- /merch -->
 
@@ -583,50 +758,61 @@
     <!-- ══════════════════════════════════════
          CONTENT STRATEGY TAB
     ══════════════════════════════════════ -->
-    <div class="tab-panel" id="tab-content-strategy" data-section="content-strategy">
+    <div class="tab-panel" id="tab-content-strategy">
       <div class="section-hero">
         <span class="hero-icon">🎬</span>
         <h1>Content Strategy</h1>
-        <p class="subtitle">What gets posted, where, when, and why. Content creation is the top layer of the business — the part Alohi already knows. This section brings intention to it.</p>
+        <p class="subtitle">Content creation is the engine of everything else — brand deals, merch sales, fan income, and long-term growth all flow from a consistent, intentional content presence.</p>
       </div>
-      <div class="note">
-        <strong>The 65-hour streaming requirement</strong>
-        The agency has set a target of 65 streaming hours per month. That's roughly 15–16 hours per week — a significant commitment, especially while still employed. Understanding exactly what counts toward this number is critical before July 17th.
-      </div>
+
       <div class="content-card">
-        <h2>Platform Breakdown</h2>
-        <ul>
-          <li><strong>TikTok (@lohilohi)</strong> — 1M followers, primary monetization platform. Anime, cosplay, dance, gaming fandom content.</li>
-          <li><strong>TikTok LIVE</strong> — primary streaming platform for the 65-hour requirement. Gifts and subscriptions are direct income.</li>
-          <li><strong>Instagram (@lohilohi)</strong> — 177K followers, strong visual presence, lower engagement rate. Supporting platform for sponsorships.</li>
-          <li><strong>Other platforms</strong> — Twitch, YouTube (evaluate as she scales)</li>
+        <h2>Your Platforms</h2>
+        <ul class="status-list">
+          <li><span class="status-badge badge-done">Primary</span> <strong>TikTok</strong> — 1,000,000 followers · proven viral engine · primary monetization</li>
+          <li><span class="status-badge badge-done">Strong</span> <strong>YouTube</strong> — 570,000 subscribers · underused in brand deal packages · needs a strategy</li>
+          <li><span class="status-badge badge-progress">Attention needed</span> <strong>Instagram</strong> — 177,000 followers · engagement declining due to inconsistent posting</li>
+          <li><span class="status-badge badge-done">Active</span> <strong>TikTok LIVE</strong> — primary streaming platform · Creator Career Program · income is 100% yours</li>
+          <li><span class="status-badge badge-done">Active</span> <strong>Patreon</strong> — membership income · fully independent revenue</li>
+          <li><span class="status-badge badge-progress">Growing</span> <strong>Twitch</strong> — 2,000 followers · early stage · evaluate as LIVE strategy develops</li>
+          <li><span class="status-badge badge-done">Active</span> <strong>Facebook</strong> — monetized · passive income channel</li>
         </ul>
       </div>
-      <div class="content-card">
-        <h2>Content Pillars</h2>
-        <p>The repeatable content formats that consistently perform and align with her audience.</p>
+
+      <div class="guardrail">
+        <div class="guardrail-title">⚠ Instagram — Action Required</div>
         <ul>
-          <li>Anime cosplay reveals and transformations</li>
-          <li>Dance videos (K-pop, anime openings)</li>
-          <li>Gaming fandom content (character tributes, references)</li>
+          <li>Engagement is declining because posting has been inconsistent — brands check this</li>
+          <li>Instagram is part of your brand deal package ($6,500–$8,000 TikTok + Instagram bundle)</li>
+          <li>A declining engagement rate reduces what you can charge — and what brands want to pay</li>
+          <li>Commit to a minimum posting schedule and stick to it — even 3x per week makes a difference</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>Content Pillars — What Works</h2>
+        <ul>
+          <li>Anime cosplay reveals and character transformations</li>
+          <li>Dance videos — K-pop, anime openings</li>
+          <li>Gaming fandom content — character tributes, scene recreations</li>
+          <li>Gym and fitness content — also drives brand deal inquiries</li>
           <li>Cosplay skits and character portrayals</li>
-          <li>Behind-the-scenes of builds and production</li>
+          <li>Behind-the-scenes of costume builds and production</li>
           <li>Convention content and event coverage</li>
+          <li>Travel content — backlog exists and can be used</li>
         </ul>
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:var(--muted);">Cosplay, gym, and makeup content drives the most brand deal inbound inquiries.</p>
       </div>
+
       <div class="content-card">
         <h2>TikTok Creator Career Program</h2>
-        <p>A TikTok-native monthly competition — recommended by the agency, run entirely by TikTok. When Alohi completes the monthly mission, <strong>TikTok pays her directly</strong>. This is not a brand deal and does not go through the agency.</p>
-        <p>The prize for completing each month's mission is advancement toward a TikTok HQ invitation, access to the July Creator Career Program, weekly 1-on-1s with content producers, and offline co-production opportunities.</p>
+        <p>A TikTok-native monthly mission Alohi self-enrolled in. <strong>TikTok pays directly upon completion — no agency commission.</strong></p>
         <ul>
-          <li>Go LIVE for <strong>65 hours</strong> in the month — TikTok LIVE only, VODs do not count</li>
-          <li>Earn <strong>200,000 diamonds</strong> from fan gifts during streams</li>
-          <li>Complete the <strong>Daily Scoop Challenge</strong> campaign sign-up</li>
-          <li>Complete <strong>200 LIVE matches</strong> against other creators</li>
+          <li>Go LIVE 65 hours in the month — TikTok LIVE only, VODs don't count</li>
+          <li>Earn 200,000 diamonds from fan gifts</li>
+          <li>Complete the Daily Scoop Challenge</li>
+          <li>Complete 200 LIVE matches against other creators</li>
         </ul>
-        <p>Target schedule: 4 hours over 4 days per week (~16 hrs/week). Alohi's note: does not want to stream 5 days/week while still employed full-time.</p>
-        <p><strong>Open question for agency call:</strong> Does the agency claim 15% commission on TikTok milestone payouts? TikTok pays directly — this should be confirmed in writing.</p>
-
+        <p style="margin-top:0.75rem;font-size:0.875rem;color:var(--muted);">Target schedule: 4 hours across 4 days per week. Don't burn out — pace is sustainable.</p>
         <div class="program-images">
           <p class="program-images-label">Program screenshots</p>
           <div class="image-strip">
@@ -639,20 +825,22 @@
           </div>
         </div>
       </div>
+
       <div class="content-card">
-        <h2>Performance Benchmarks</h2>
-        <p>Understanding what's working across platforms.</p>
+        <h2>YouTube — The Underused Asset</h2>
+        <p>570,000 subscribers is a significant audience. It's currently not being included in brand deal packages — and it should be. Action items:</p>
         <ul>
-          <li>TikTok regular posts: 20K–90K views typical</li>
-          <li>TikTok strong performers: 100K–200K+ views</li>
-          <li>Instagram likes: 1,500–3,600 per post</li>
-          <li>Instagram comments: 10–20 per post (engagement gap to address)</li>
-          <li>Track: which content types drive brand deal inbound inquiries?</li>
+          <li>Add YouTube to all brand deal pitches and sponsorship packages</li>
+          <li>Ensure Warens knows the subscriber count and is factoring it into negotiations</li>
+          <li>Develop a YouTube-specific content rhythm — even bi-weekly uploads build compounding revenue</li>
+          <li>Long-form cosplay builds, convention vlogs, and travel content are natural fits</li>
         </ul>
       </div>
-      <div class="empty-state">
-        <span class="empty-icon">📅</span>
-        <p>Content calendars, stream schedules, and monthly performance logs will be added here.</p>
+
+      <div class="tab-notes" data-notes-key="content-strategy">
+        <span class="tab-notes-label">Content schedule &amp; performance notes</span>
+        <textarea class="tab-notes-area" placeholder="Track posting schedules, content ideas, performance observations, and Creator Career Program progress…"></textarea>
+        <span class="tab-notes-indicator">Saved ✓</span>
       </div>
     </div><!-- /content-strategy -->
 
@@ -660,26 +848,26 @@
     <!-- ══════════════════════════════════════
          CALLS TAB
     ══════════════════════════════════════ -->
-    <div class="tab-panel" id="tab-calls" data-section="calls">
+    <div class="tab-panel" id="tab-calls">
       <div class="section-hero">
         <span class="hero-icon">📞</span>
-        <h1>Calls</h1>
-        <p class="subtitle">Dated notes from every important conversation — what was said, what was agreed, and what the next step is. If it's not written down, it didn't happen.</p>
+        <h1>Calls &amp; Records</h1>
+        <p class="subtitle">Every important conversation, documented. If it wasn't written down, it didn't happen.</p>
       </div>
+
       <div class="note">
-        <strong>Agency call — date TBD</strong>
-        Attendees: Alohi, Halani, Leonard. Goal: understand the contract terms, the 65-hour requirement, and what the agency is actually delivering. Drop notes here immediately after the call.
+        <strong>Rule:</strong> After every significant call or meeting, write a summary within 24 hours. Send a follow-up email to anyone who made a commitment. That email is your paper trail.
       </div>
 
       <div class="prep-links">
-        <h2 class="prep-links-title">Call Prep Documents</h2>
-        <p class="prep-links-desc">Complete these before the call. Alohi fills hers out first — then compare her answers against the agency's responses to find the gaps.</p>
+        <h2 class="prep-links-title">Meeting Documents</h2>
+        <p class="prep-links-desc">All three documents for the Saturday meeting and Warens follow-up.</p>
         <div class="prep-link-grid">
           <a href="calls/alohi-prep.html" class="prep-link-card" target="_blank">
             <span class="prep-link-icon">📋</span>
             <div>
               <div class="prep-link-title">Alohi's Pre-Call Questions</div>
-              <div class="prep-link-desc">What does she actually know and believe? Fill this out before the call.</div>
+              <div class="prep-link-desc">What Alohi answered before the meeting — her baseline understanding.</div>
             </div>
             <span class="prep-link-arrow">→</span>
           </a>
@@ -687,7 +875,7 @@
             <span class="prep-link-icon">🏢</span>
             <div>
               <div class="prep-link-title">Saturday Meeting — Warens</div>
-              <div class="prep-link-desc">Reference sheet and note-taker for Saturday's meeting. Print or use on a tablet.</div>
+              <div class="prep-link-desc">8 questions for Mom and Dad. Warm, parent-first. Take notes during the call.</div>
             </div>
             <span class="prep-link-arrow">→</span>
           </a>
@@ -695,52 +883,24 @@
             <span class="prep-link-icon">✉️</span>
             <div>
               <div class="prep-link-title">Alohi's Written Follow-Up</div>
-              <div class="prep-link-desc">Email template for Alohi to send Warens after Saturday. Covers the detailed business questions in her voice.</div>
+              <div class="prep-link-desc">Email template Alohi sends Warens after Saturday. 7 business questions, her voice.</div>
             </div>
             <span class="prep-link-arrow">→</span>
           </a>
         </div>
       </div>
-      <div class="content-card">
-        <h2>Upcoming: Agency Call (Date TBD)</h2>
-        <p>Key things to document during or immediately after the call:</p>
-        <ul>
-          <li>Date and attendees</li>
-          <li>Who spoke for the agency</li>
-          <li>Exact commission rate stated</li>
-          <li>What income the commission applies to</li>
-          <li>Exact nature of the 65-hour streaming requirement</li>
-          <li>What happens if she misses the 65-hour target</li>
-          <li>Contract term and exit process</li>
-          <li>What the agency says they are actively doing for Alohi right now</li>
-          <li>Any commitments or promises made on the call</li>
-          <li>Action items and who is responsible for each</li>
-          <li>Open questions that need a written follow-up</li>
-        </ul>
-      </div>
-      <div class="content-card">
-        <h2>Call Log Format</h2>
-        <p>Each call note should follow this structure for consistency:</p>
-        <ul>
-          <li><strong>Date</strong> — YYYY-MM-DD</li>
-          <li><strong>Participants</strong> — who was on the call</li>
-          <li><strong>Purpose</strong> — why the call happened</li>
-          <li><strong>Key points</strong> — what was discussed, verbatim where possible</li>
-          <li><strong>Decisions made</strong> — anything agreed or committed to</li>
-          <li><strong>Action items</strong> — who does what by when</li>
-          <li><strong>Follow-up needed</strong> — open questions or unresolved items</li>
-        </ul>
-      </div>
-      <div class="empty-state">
-        <span class="empty-icon">🗒️</span>
-        <p>Call notes will be added here starting with the agency call.</p>
+
+      <div class="tab-notes" data-notes-key="calls">
+        <span class="tab-notes-label">Meeting notes &amp; call log</span>
+        <textarea class="tab-notes-area" placeholder="Add dated notes from every call and meeting here. Format: Date · Attendees · Key points · Action items…"></textarea>
+        <span class="tab-notes-indicator">Saved ✓</span>
       </div>
     </div><!-- /calls -->
 
   </main>
 
   <footer class="site-footer">
-    Alohi Business HQ &nbsp;·&nbsp; Private &nbsp;·&nbsp; Last updated June 2026
+    Alohi Business HQ &nbsp;·&nbsp; Private &nbsp;·&nbsp; Built with love by Mom &amp; Dad 🌺
   </footer>
 
   <script src="app.js"></script>
